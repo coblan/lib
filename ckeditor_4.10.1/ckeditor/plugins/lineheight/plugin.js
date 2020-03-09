@@ -1,4 +1,4 @@
-/*
+﻿/*
 This is a modification to the existing ckeditor 4 line-height plugin.
 The purpose of this modification is to render line-heights in email clients.
 The modification applies inline styles directly to the selected elements,
@@ -6,7 +6,6 @@ rather than inserting a span ( default behavior of editor.applyStyle() ).
 NOTE: this will NOT work in IE or Edge.
 */
 (function () {
-	debugger
 	function addCombo(editor, comboName, styleType, lang, entries, defaultLabel, styleDefinition, order) {
 		var config = editor.config, style = new CKEDITOR.style(styleDefinition);
 		var names = entries.split(';'), values = [];
