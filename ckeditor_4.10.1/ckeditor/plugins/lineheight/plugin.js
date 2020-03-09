@@ -6,6 +6,7 @@ rather than inserting a span ( default behavior of editor.applyStyle() ).
 NOTE: this will NOT work in IE or Edge.
 */
 (function () {
+	debugger
 	function addCombo(editor, comboName, styleType, lang, entries, defaultLabel, styleDefinition, order) {
 		var config = editor.config, style = new CKEDITOR.style(styleDefinition);
 		var names = entries.split(';'), values = [];
@@ -98,7 +99,7 @@ NOTE: this will NOT work in IE or Edge.
 		}
 	});
 })();
-CKEDITOR.config.line_height = '1/100%;1.5/150%;2.0/200%;2.5/250%;3.0/300%';
+CKEDITOR.config.line_height = '1/100%;1.3/130%;1.5/150%;1.8/180%;2.0/200%;2.3/230%;2.5/250%;2.8/280%;3.0/300%;3.3/330%;3.5/350%;3.8/380%;4.0/400%';
 
 // this style definition is not used to apply styles
 // only here for construction of the drop down menu
